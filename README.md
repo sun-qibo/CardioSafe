@@ -28,7 +28,7 @@ model_path = snapshot_download(
 )
 
 # Load the predictor
-predictor = TabularPredictor.load(model_path)
+predictor = TabularPredictor.load(model_path, require_py_version_match=False)
 
 print("Model loaded successfully!")
 ```
